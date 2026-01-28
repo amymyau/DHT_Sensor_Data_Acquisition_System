@@ -1,0 +1,17 @@
+# Arduino temporary files
+/build/
+/libraries/
+*.hex
+*.elf
+
+# Python temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Windows/Mac system files
+Thumbs.db
+.DS_Store
+
+# Local CSV logs (if you don't want your private data on GitHub)
+Python-PC-Side-Code/*.csv

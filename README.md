@@ -1,4 +1,8 @@
 =======
+
+# Now support both DHT and BME sensors
+
+=======
 # DHT Sensor Data Acquisition System
 
 A robust Arduino-based system for reading temperature data from a DHT11 sensor.

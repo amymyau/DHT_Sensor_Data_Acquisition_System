@@ -1,3 +1,14 @@
+===========
+
+# Start a background thread to handle printing the logger's output
+# Removed the emoji since the window prompt is using an older encoding that
+# does not understand emojis, the "child" process often inherits a "dumb" terminal pipe
+# that does not have the same capabilities as the main PowerShell window, causing it
+# to default back to the safest (but most restrictive) encoding
+# used ASCII-based symbols instead
+
+
+
 =======
 
 # added the run_stress_test.py python script which acts as the manager running the logger, captures the output and calculates the final grade of the hardware's stability

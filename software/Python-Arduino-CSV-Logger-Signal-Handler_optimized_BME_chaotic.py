@@ -48,10 +48,10 @@ try:
 
                 if not line:
                     status = "TIMEOUT"
-                    print(f"⚠️ [{total_requests}] TIMEOUT | Latency: {latency}ms")
+                    print(f" TIMEOUT: [{total_requests}] | Latency: {latency}ms")
                 elif "ERR" in line:
                     status = "SENS_ERR"
-                    print(f"❌ [{total_requests}] ARDUINO ERR: {line} | Latency: {latency}ms")
+                    print(f" [{total_requests}] ARDUINO ERR: {line} | Latency: {latency}ms")
                 else:
                     parts = line.split('-')
                     if len(parts) == 3:
@@ -66,10 +66,10 @@ try:
 
                         # Print Stats
                         success_rate = (success_count / total_requests) * 100
-                        print(f"✅ [{total_requests}] {temp}°C | {latency}ms | Reliability: {success_rate:.1f}%")
+                        print(f" [{total_requests}] {temp}°C | {latency}ms | Reliability: {success_rate:.1f}%")
                     else:
                         status = "PARSE_ERR"
-                        print(f"⚠️ [{total_requests}] MALFORMED DATA | Latency: {latency}ms")
+                        print(f"️ [{total_requests}] MALFORMED DATA | Latency: {latency}ms")
 
                 time.sleep(1)  # Short delay between requests
 

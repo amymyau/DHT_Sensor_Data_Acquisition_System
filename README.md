@@ -1,5 +1,9 @@
 =======
 
+# added the run_stress_test.py python script which acts as the manager running the logger, captures the output and calculates the final grade of the hardware's stability
+
+=======
+
 # Now support both DHT and BME sensors
 
 =======

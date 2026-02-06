@@ -26,8 +26,8 @@ jobs:
             - name: "Adafruit BusIO		
           # Since your code is in a folder called 'firmware', we specify it here
           sketch-paths: |
-            - ./firmware/bme280_sensor
-            - ./firmware/dht_sensor
+            - ./firmware/bme280_sensor/bme280_stress_test.ino
+            - ./firmware/dht_sensor/DHT_sensor.ino
           
           # Set to true to see detailed compiler output
           verbose: false

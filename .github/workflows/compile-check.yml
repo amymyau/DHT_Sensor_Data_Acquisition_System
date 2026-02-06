@@ -17,19 +17,16 @@ jobs:
       - name: Compile Sketch
         uses: arduino/compile-sketches@v1
         with:
-          # FQBN for the Arduino Uno (common for these sensor projects)
           fqbn: "arduino:avr:uno"
-          
-          # Install the necessary library dependencies automatically
+          # These 3 libraries are almost always required for these sensors
           libraries: |
             - name: "DHT sensor library"
             - name: "Adafruit BME280 Library"
             - name: "Adafruit Unified Sensor"
-          
-          # If your .ino file is in a specific folder, specify it here
-          # Otherwise, it will search recursively for any .ino files
+          # Since your code is in a folder called 'firmware', we specify it here
           sketch-paths: |
-            - ./
+            - ./firmware/bme280_sensor
+            - ./firmware/dht_sensor
           
           # Set to true to see detailed compiler output
           verbose: false

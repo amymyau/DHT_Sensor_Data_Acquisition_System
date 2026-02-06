@@ -23,6 +23,7 @@ jobs:
             - name: "DHT sensor library"
             - name: "Adafruit BME280 Library"
             - name: "Adafruit Unified Sensor"
+            - name: "Adafruit BusIO		
           # Since your code is in a folder called 'firmware', we specify it here
           sketch-paths: |
             - ./firmware/bme280_sensor

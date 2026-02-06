@@ -1,0 +1,35 @@
+name: Arduino Compile Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Compile Sketch
+        uses: arduino/compile-sketches@v1
+        with:
+          # FQBN for the Arduino Uno (common for these sensor projects)
+          fqbn: "arduino:avr:uno"
+          
+          # Install the necessary library dependencies automatically
+          libraries: |
+            - name: "DHT sensor library"
+            - name: "Adafruit BME280 Library"
+            - name: "Adafruit Unified Sensor"
+          
+          # If your .ino file is in a specific folder, specify it here
+          # Otherwise, it will search recursively for any .ino files
+          sketch-paths: |
+            - ./
+          
+          # Set to true to see detailed compiler output
+          verbose: false

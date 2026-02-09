@@ -1,8 +1,12 @@
+============
 
-===========
-###High-Reliability Sensor Data Acquisition System
-###I engineered a full-stack validation suite to bridge the gap between embedded hardware and PC-
-###side analytics. To ensure 24/7 mission-critical stability, I implemented a 'Chaos Monkey' fault-injection ###firmware to simulate I2C bus contention and NACK errors. I complemented this with an automated Python test ###harness that calculated real-time reliability metrics over 12-hour soak tests. By integrating CI/CD ###pipelines via GitHub Actions and developing a post-processing data-cleaning engine, I created a scalable ###framework that ensures data integrity while significantly reducing manual auditing time
+### High-Reliability Sensor Data Acquisition System
+### I engineered a full-stack validation suite to bridge the gap between embedded hardware and PC-
+### side analytics. To ensure 24/7 mission-critical stability, I implemented a 'Chaos Monkey' fault-injection 
+### firmware to simulate I2C bus ### contention and NACK errors. I complemented this with an automated Python
+### test harness that calculated real-### time reliability metrics over 12-hour soak tests. By integrating CI/CD 
+### pipelines via GitHub Actions and ### developing a post-processing data-cleaning engine, I created a scalable 
+### framework that ensures data ### integrity while significantly reducing manual auditing time
 
 
 ===========

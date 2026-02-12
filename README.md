@@ -1,6 +1,6 @@
 ============
 
-added PCIE in system eye scan parser python file
+added PCIE system eye scan parser python file
 
 ============
 
